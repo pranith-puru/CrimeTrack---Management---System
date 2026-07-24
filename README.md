@@ -1,315 +1,133 @@
-# CrimeTrack---Management---System
-JavaFX + JDBC + MySQL + MongoDB Management System 
+# 🚔 CrimeTrack Management System
 
-<p align="center">
-
-![Java](https://img.shields.io/badge/Java-17+-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)
-![JavaFX](https://img.shields.io/badge/JavaFX-UI-blue?style=for-the-badge)
-![MySQL](https://img.shields.io/badge/MySQL-Database-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
-![MongoDB](https://img.shields.io/badge/MongoDB-NoSQL-47A248?style=for-the-badge&logo=mongodb&logoColor=white)
-![JDBC](https://img.shields.io/badge/JDBC-Connectivity-success?style=for-the-badge)
-![License](https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge)
-
-</p>
-
-<p align="center">
-A modern Police Crime Management System built using <b>JavaFX, JDBC, MySQL, and MongoDB</b> for efficient criminal record and FIR management.
-</p>
+A modern desktop-based Crime Management System developed using **JavaFX**, **JDBC**, and **MySQL**. The application helps police departments efficiently manage criminal records, FIRs, operator information, and crime reports through an intuitive graphical interface.
 
 ---
 
-# 🎥 Project Demo
+## 📌 Features
 
-> **Add your demo GIF here after recording your application**
-
-<p align="center">
-
-<img src="screenshots/demo.gif" width="850">
-
-</p>
-
----
-
-# 📸 Application Screenshots
-
-# 📸 Application Screenshots
-
-## 🔐 Login Screen
-
-![Login](screenshots/login.png)
+- 🔐 Secure Login Authentication
+- 📊 Interactive Dashboard
+- 👤 Add Criminal Records
+- 🔍 Search Criminal by Aadhaar Number
+- 📑 FIR Records Management
+- 👮 View Criminal Details
+- 📈 Reports Dashboard
+- 💾 MySQL Database Connectivity using JDBC
+- 🎨 Modern JavaFX User Interface
+- 🏗️ MVC Architecture
 
 ---
 
-## 📊 Dashboard
+## 🛠️ Technologies Used
 
-![Dashboard](screenshots/dashboard.png)
-
----
-
-## ➕ Add Criminal
-
-![Add Criminal](screenshots/add-criminal.png)
-
----
-
-## 🔍 Search Criminal
-
-![Search Criminal](screenshots/search-criminal.png)
-
----
-
-## 📑 FIR Records
-
-![FIR Records](screenshots/fir-records.png)
-
----
-
-## 📈 Reports
-
-![Reports](screenshots/reports.png)
-
----
-
-## 👮 View Criminals
-
-![View Criminals](screenshots/view-criminals.png)
-
----
-
-## 👥 Operators
-
-![Operators](screenshots/operators.png)
-
-# ✨ Features
-
-| Feature | Description |
-|----------|-------------|
-| 🔐 Secure Login | User Authentication using JDBC |
-| 📊 Dashboard | Live statistics from MySQL |
-| 👤 Criminal Management | Add, Update, Delete Criminals |
-| 📄 FIR Management | Register & Manage FIR Records |
-| 🔎 Search System | Search Criminal using Aadhaar/FIR |
-| 🖼 Image Upload | Store Criminal Images |
-| 💾 MySQL Database | Relational Database |
-| 🍃 MongoDB CRUD | NoSQL Crime Intelligence Module |
-| 🎨 JavaFX UI | Modern Police Dashboard |
-
----
-
-# 🛠 Technologies Used
-
-- Java 17
+- Java
 - JavaFX
 - JDBC
 - MySQL
-- MongoDB
 - Eclipse IDE
 - CSS
 - FXML
 
 ---
 
-# 🏗 Project Architecture
+## 📂 Project Structure
 
-```text
-                     USER
-
-                      │
-                      ▼
-
-            JavaFX Graphical UI
-
-                      │
-                      ▼
-
-               Controller Layer
-
-                      │
-          ┌───────────┴───────────┐
-          ▼                       ▼
-
-      JDBC Layer           MongoDB Driver
-
-          ▼                       ▼
-
-     MySQL Database      MongoDB Database
+```
+CrimeTrack-Management-System
+│
+├── src/
+│   ├── MainApp.java
+│   ├── DBConnection.java
+│   ├── Controllers
+│   └── Models
+│
+├── resources/
+│   ├── FXML Files
+│   ├── CSS
+│   └── Images
+│
+└── README.md
 ```
 
 ---
 
-# 📂 Project Structure
+## 🗄️ Database
 
-```text
-CrimeTrack-Police-Management-System
+Database: **MySQL**
 
-│
+Main Tables:
 
-├── src
-│
-│   └── com.crimetrack
-│
-│       ├── MainApp.java
-│       ├── DBConnection.java
-│       ├── LoginController.java
-│       ├── DashboardController.java
-│       ├── AddCriminalController.java
-│       ├── SearchController.java
-│       ├── FIRController.java
-│       └── ViewCriminalController.java
-│
-├── resources
-│
-│   ├── login.fxml
-│   ├── dashboard.fxml
-│   ├── addcriminal.fxml
-│   ├── search.fxml
-│   ├── fir.fxml
-│   ├── viewcriminal.fxml
-│   ├── style.css
-│   └── images
-│
-├── database
-│   └── CrimeTrackDB.sql
-│
-├── screenshots
-│
-├── README.md
-│
-└── LICENSE
-```
+- Login
+- Criminal
+- FIR
+- Operators
+
+The application connects to MySQL using JDBC for storing and retrieving records.
 
 ---
 
-# ⚙ Installation Guide
+## 🚀 Installation
 
-## 1️⃣ Clone Repository
+1. Clone the repository
 
-```bash
-git clone https://github.com/pranith-puru/CrimeTrack-Police-Management-System.git
 ```
+git clone https://github.com/pranith-puru/CrimeTrack---Management---System.git
+```
+
+2. Open the project in Eclipse IDE.
+
+3. Import the MySQL database.
+
+4. Add the MySQL Connector/J library.
+
+5. Configure the database credentials in `DBConnection.java`.
+
+6. Run `MainApp.java`.
 
 ---
 
-## 2️⃣ Import Project
+## 📋 Modules
 
-Import the project into Eclipse IDE.
-
----
-
-## 3️⃣ Install JavaFX SDK
-
-Download JavaFX SDK and configure VM arguments.
-
-```
---module-path "C:\javafx-sdk-21\lib"
---add-modules javafx.controls,javafx.fxml
-```
+- Login
+- Dashboard
+- Add Criminal
+- Search Criminal
+- FIR Records
+- View Criminals
+- Operators
+- Reports
 
 ---
 
-## 4️⃣ Install MySQL
+## 🏛️ Architecture
 
-Create database
+The project follows the **MVC (Model-View-Controller)** architecture.
 
-```
-CrimeTrackDB
-```
-
-Execute
-
-```
-CrimeTrackDB.sql
-```
+- **Model** → MySQL Database
+- **View** → JavaFX FXML
+- **Controller** → Java Controllers
 
 ---
 
-## 5️⃣ Configure JDBC
+## 🔮 Future Enhancements
 
-Update
-
-```
-DBConnection.java
-```
-
-with your MySQL username and password.
-
----
-
-## 6️⃣ Run Project
-
-Run
-
-```
-MainApp.java
-```
-
----
-
-# 🍃 MongoDB CRUD
-
-The project also demonstrates CRUD operations using MongoDB.
-
-### Create
-
-```
-insertOne()
-```
-
-### Read
-
-```
-find()
-```
-
-### Update
-
-```
-updateOne()
-```
-
-### Delete
-
-```
-deleteOne()
-```
-
----
-
-# 📈 Future Enhancements
-
-- AI-based Crime Prediction
+- MongoDB (NoSQL) CRUD Operations
 - Face Recognition
-- Fingerprint Authentication
-- CCTV Integration
+- Biometric Authentication
 - PDF Report Generation
-- Cloud Database
-- REST API
-- Mobile Application
+- Cloud Database Integration
+- AI-based Crime Analysis
 
 ---
 
-# 👨‍💻 Developer
+## 👨‍💻 Developer
 
 **Pranith C Gowda**
 
 BE – Information Science & Engineering
 
 The National Institute of Engineering, Mysore
-
-GitHub:
-https://github.com/pranith-puru
-
----
-
-# ⭐ Support
-
-If you like this project,
-
-⭐ Star this repository
-
-🍴 Fork it
-
-📢 Share it
 
 ---
 
