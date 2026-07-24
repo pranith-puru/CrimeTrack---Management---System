@@ -32,41 +32,53 @@ A modern Police Crime Management System built using <b>JavaFX, JDBC, MySQL, and 
 
 # 📸 Application Screenshots
 
+# 📸 Application Screenshots
+
 ## 🔐 Login Screen
 
-<img src="screenshots/login.png">
+![Login](screenshots/login.png)
 
 ---
 
 ## 📊 Dashboard
 
-<img src="screenshots/dashboard.png">
+![Dashboard](screenshots/dashboard.png)
 
 ---
 
-## 👤 Add Criminal
+## ➕ Add Criminal
 
-<img src="screenshots/addcriminal.png">
-
----
-
-## 🔎 Search Criminal
-
-<img src="screenshots/search.png">
+![Add Criminal](screenshots/add-criminal.png)
 
 ---
 
-## 📋 FIR Records
+## 🔍 Search Criminal
 
-<img src="screenshots/fir.png">
+![Search Criminal](screenshots/search-criminal.png)
+
+---
+
+## 📑 FIR Records
+
+![FIR Records](screenshots/fir-records.png)
 
 ---
 
-## 📑 View Criminals
+## 📈 Reports
 
-<img src="screenshots/viewcriminal.png">
+![Reports](screenshots/reports.png)
 
 ---
+
+## 👮 View Criminals
+
+![View Criminals](screenshots/view-criminals.png)
+
+---
+
+## 👥 Operators
+
+![Operators](screenshots/operators.png)
 
 # ✨ Features
 
